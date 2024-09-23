@@ -170,12 +170,43 @@
           
           <!-- 이미지 추가 -->
           <figure class="image is-3by2">
-            <img src="static/images/Figure2.png" alt="Image Description">
+            <img src="static/images/Figure1.png" alt="Image Description">
           </figure>
           
           <!-- 설명 추가 -->
           <p>
           </p>
+
+          <h3 class="title is-4">Perception of Intrinsic Features</h3>
+          <h4 class="title is-4">VLM Prompt Detection</h4>
+          <p>
+            To detect complex objects in marine situations, we employed the VLM model, specifically Grounding DINO. This model uses free-form prompts to perform detection for additional object classes. 
+          </p>
+          
+          <!-- 이미지 추가 -->
+          <figure class="image is-3by2">
+            <img src="static/images/Figure2.png" alt="Image Description">
+          </figure>
+
+          <h4 class="title is-4">LLM Navigational Scene Understanding</h4>
+          <p>
+            In the LLM Navigational Scene Understanding module, object detection results from Stage I and VLM prompt detection from Stage II are used for maritime scene understanding. GPT-4o was chosen for its ability to handle visual referring prompting and complex environments. 
+          </p>
+          
+          <!-- 이미지 추가 -->
+          <figure class="image is-3by2">
+            <img src="static/images/Figure3.png" alt="Image Description">
+          </figure>
+
+          <h3 class="title is-4">Scene Understanding Cost Map</h3>
+          <p>
+            The results of the VLM and LLM in Stage II are reflected as follows: Maritime marks, such as bridge and buoy marks, and ship intentions are incorporated into obstacle zones with the probability.
+          </p>
+          
+          <!-- 이미지 추가 -->
+          <figure class="image is-3by2">
+            <img src="static/images/Figure4.png" alt="Image Description">
+          </figure>
           
           <!-- 이미지와 설명이 끝나는 부분 -->
         </div>
