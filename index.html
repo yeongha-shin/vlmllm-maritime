@@ -165,9 +165,9 @@
         <div class="content has-text-justified">
           <h3 class="title is-4">Perception of Extrinsic Features</h3>         
           <!-- 이미지 추가 -->
-          <figure class="image is-3by2" style="margin-bottom: 0; padding: 0;"> 
+          <figure class="image is-3by2" style="margin-bottom: 0;"> 
             <img src="static/images/Figure1.png" alt="Image Description" style="max-width:100%; height: auto;">
-            <figcaption style="text-align: center; font-size: 14px; color: #666; margin-top: 0; padding: 0;">
+            <figcaption style="text-align: center; font-size: 14px; color: #666; margin-top: 0;">
               In maritime environments, where proactive avoidance is essential, detecting distant objects is crucial. We used the RT-DETR and YOSO models for precise detection. RT-DETR excels in detecting distant boats, while YOSO provides pixel-level segmentation of land and bridge structures.
               The proposed algorithm integrates image data into the radar coordinate system using extrinsic and intrinsic parameters of the camera.
               Fig. 2(a) shows accurate boat detection, while (b) demonstrates the correct generation of land and bridge information. The results are displayed in Fig. 2(c), where boat detection and segmentation of bridges and land are accurately aligned with the radar coordinates. 
@@ -177,27 +177,27 @@
           <h3 class="title is-4">Perception of Intrinsic Features</h3>
           <h4 class="title is-4">VLM Prompt Detection</h4>
           <!-- 이미지 추가 -->
-          <figure class="image is-3by2" style="margin-bottom: 0; padding: 0;">
+          <figure class="image is-3by2" style="margin-bottom: 0;">
             <img src="static/images/Figure2.png" alt="Image Description" style="max-width:100%; height: auto;">
-            <figcaption style="text-align: center; font-size: 14px; color: #666; margin-top: 0; padding: 0;">
+            <figcaption style="text-align: center; font-size: 14px; color: #666; margin-top: 0;">
               To detect complex objects in marine situations, we employed the VLM model, specifically Grounding DINO. This model uses free-form prompts to perform detection for additional object classes. 
             </figcaption>
           </figure>
 
           <h4 class="title is-4">LLM Navigational Scene Understanding</h4>
           <!-- 이미지 추가 -->
-          <figure class="image is-3by2" style="margin-bottom: 0; padding: 0;">
+          <figure class="image is-3by2" style="margin-bottom: 0;">
             <img src="static/images/Figure3.png" alt="Image Description" style="max-width:100%; height: auto;">
-            <figcaption style="text-align: center; font-size: 14px; color: #666; margin-top: 0; padding: 0;">
+            <figcaption style="text-align: center; font-size: 14px; color: #666; margin-top: 0;">
               In the LLM Navigational Scene Understanding module, object detection results from Stage I and VLM prompt detection from Stage II are used for maritime scene understanding. GPT-4o was chosen for its ability to handle visual referring prompting and complex environments. 
             </figcaption>
           </figure>
           
           <h3 class="title is-4">Scene Understanding Cost Map</h3>         
           <!-- 이미지 추가 -->
-          <figure class="image is-3by2" style="margin-bottom: 0; padding: 0;">
+          <figure class="image is-3by2" style="margin-bottom: 0;">
             <img src="static/images/Figure4.png" alt="Image Description" style="max-width:100%; height: auto;">
-            <figcaption style="text-align: center; font-size: 14px; color: #666; margin-top: 0; padding: 0;">
+            <figcaption style="text-align: center; font-size: 14px; color: #666; margin-top: 0;">
               The results of the VLM and LLM in Stage II are reflected as follows: Maritime marks, such as bridge and buoy marks, and ship intentions are incorporated into obstacle zones with the probability.
               An occupancy grid map was generated based on the results from Stages I and II using the occupancy grid map model. As shown in Fig. 5(b), the bridge pillars visible from the camera are precisely detected as obstacle areas, and the area between the bridge pillars is designated as a navigable zone due to the camera’s ability to detect height. This allows for flexible application according to the given situation. Fig. 5(c) illustrates this, where maritime marks, ship intentions, and rules are integrated, marking the left-side route as unnavigable. 
             </figcaption>
