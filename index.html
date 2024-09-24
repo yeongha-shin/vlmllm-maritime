@@ -165,8 +165,8 @@
         <div class="content has-text-justified">
           <h3 class="title is-4">Perception of Extrinsic Features</h3>         
           <!-- 이미지 추가 -->
-          <figure class="image is-3by2">
-            <img src="static/images/Figure1.png" alt="Image Description" style="max-width:100%; height: auto; margin: 0 0 5px 0;">
+          <figure class="image is-3by2" style="margin-bottom: 0;"> 
+            <img src="static/images/Figure1.png" alt="Image Description" style="max-width:100%; height: auto;>
             <figcaption style="text-align: center; font-size: 14px; color: #666;">
               In maritime environments, where proactive avoidance is essential, detecting distant objects is crucial. We used the RT-DETR and YOSO models for precise detection. RT-DETR excels in detecting distant boats, while YOSO provides pixel-level segmentation of land and bridge structures.
               The proposed algorithm integrates image data into the radar coordinate system using extrinsic and intrinsic parameters of the camera.
@@ -177,8 +177,8 @@
           <h3 class="title is-4">Perception of Intrinsic Features</h3>
           <h4 class="title is-4">VLM Prompt Detection</h4>
           <!-- 이미지 추가 -->
-          <figure class="image is-3by2">
-            <img src="static/images/Figure2.png" alt="Image Description" style="max-width:100%; max-height: 300px; margin: 0 0 5px 0;">
+          <figure class="image is-3by2" style="margin-bottom: 0;">
+            <img src="static/images/Figure2.png" alt="Image Description" style="max-width:100%; height: auto;>
             <figcaption style="text-align: center; font-size: 14px; color: #666;">
               To detect complex objects in marine situations, we employed the VLM model, specifically Grounding DINO. This model uses free-form prompts to perform detection for additional object classes. 
             </figcaption>
@@ -186,7 +186,7 @@
 
           <h4 class="title is-4">LLM Navigational Scene Understanding</h4>
           <!-- 이미지 추가 -->
-          <figure class="image is-3by2">
+          <figure class="image is-3by2" style="margin-bottom: 0;">
             <img src="static/images/Figure3.png" alt="Image Description" style="max-width:100%; height: auto; margin: 0 0 5px 0;">
             <figcaption style="text-align: center; font-size: 14px; color: #666;">
               In the LLM Navigational Scene Understanding module, object detection results from Stage I and VLM prompt detection from Stage II are used for maritime scene understanding. GPT-4o was chosen for its ability to handle visual referring prompting and complex environments. 
@@ -195,7 +195,7 @@
           
           <h3 class="title is-4">Scene Understanding Cost Map</h3>         
           <!-- 이미지 추가 -->
-          <figure class="image is-3by2">
+          <figure class="image is-3by2" style="margin-bottom: 0;">
             <img src="static/images/Figure4.png" alt="Image Description" style="max-width:100%; height: auto; margin: 0 0 5px 0;">
             <figcaption style="text-align: center; font-size: 14px; color: #666;">
               The results of the VLM and LLM in Stage II are reflected as follows: Maritime marks, such as bridge and buoy marks, and ship intentions are incorporated into obstacle zones with the probability.
